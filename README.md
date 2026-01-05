@@ -55,7 +55,16 @@ The evaluation flow is divided into 5 distinct stages. You can run them manually
 - **Flags**: `-input`, `-workers`, `-cmd`, `-args`.
 
 ### Stage 6: Comparative Evaluation (Optional)
-This is where the pipeline truly shines. Once you have an aligned judge, you can run Stage 2 and Stage 5 for **different models** (e.g., Llama 3 vs. Gemma 2) and compare their final scores. 
+This is where the pipeline truly shines. Once you have an aligned judge, you can run Stage 2 and Stage 5 for **different models** (e.g., Llama 3 vs. Gemma 2) and compare their final scores.
+
+#### Example: Llama 3.3 (70B) vs. Gemma 3 (1B)
+Running the exact same 45 "hard" cases through both models yields a clear winner:
+
+| Model | Total Samples | Passing | Failing | **Final Score** |
+| :--- | :---: | :---: | :---: | :---: |
+| **Llama 3.3 (70B)** | 45 | 42 | 3 | **93.33%** |
+| **Gemma 3 (1B)** | 45 | 23 | 22 | **51.11%** |
+
 - A higher score from the judge indicates better factual alignment with your golden set.
 - Use this to make data-driven decisions on which model to deploy for your specific product use-case.
 
