@@ -59,6 +59,8 @@ This is where the pipeline truly shines. Once you have an aligned judge, you can
 - A higher score from the judge indicates better factual alignment with your golden set.
 - Use this to make data-driven decisions on which model to deploy for your specific product use-case.
 
+<img width="2816" height="1536" alt="Gemini_Generated_Image_yka7b0yka7b0yka7" src="https://github.com/user-attachments/assets/c6d2702a-f56a-47e1-9b5e-17bd09fbb738" />
+
 ---
 
 ## 📁 Data Flow
